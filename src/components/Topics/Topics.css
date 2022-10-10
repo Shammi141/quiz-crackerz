@@ -1,0 +1,18 @@
+.topic-details{
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    height: 290px;
+    width: 280px;
+    margin: 15px;
+}
+.topic-details img{
+    height: 70%;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+.topic-info{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}

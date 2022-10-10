@@ -14,7 +14,9 @@ function App() {
       children: [
         {
           path: '/',
-          loader: () => fetch('topic.json'),
+          loader: () =>{
+            return fetch('https://openapi.programming-hero.com/api/quiz');
+          },
           element: <Home></Home>
         },
         {
@@ -31,6 +33,10 @@ function App() {
         }
         
       ]
+    },
+    {
+      path: '*',
+      element: <div>Route is not Correct!</div>
     }
   ]);
   return (

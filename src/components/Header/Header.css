@@ -2,14 +2,16 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    font-weight: bold;
     font-size: 22px;
     color: white;
     background-color: blueviolet;
+}
+.title{
+    font-size:30px;
+    font-weight: bold;
 }
 .nav-link a{
     margin-right: 20px;
     text-decoration: none;
     color: white;
-    
 }
