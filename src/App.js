@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import Blogs from './components/Blogs/Blogs';
 import Home from './components/Home/Home';
 import Statistics from './components/Statistics/Statistics';
 import Topics from './components/Topics/Topics';
@@ -13,12 +14,21 @@ function App() {
       children: [
         {
           path: '/',
+          loader: () => fetch('topic.json'),
           element: <Home></Home>
         },
         {
           path: '/topics',
           element: <Topics></Topics>
         },
+        {
+          path: '/statistics',
+          element: <Statistics></Statistics>
+        },
+        {
+          path: '/blogs',
+          element: <Blogs></Blogs>
+        }
         
       ]
     }

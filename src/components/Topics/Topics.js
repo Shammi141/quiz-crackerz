@@ -1,10 +1,11 @@
 import React from 'react';
 import './Topics.css'
 
-const Topics = () => {
+const Topics = ({topic}) => {
+    // const {name, id, logo} = topic;
     return (
         <div>
-            <h4>topics</h4>
+            {/* <img src={logo} alt="" /> */}
         </div>
     );
 };
