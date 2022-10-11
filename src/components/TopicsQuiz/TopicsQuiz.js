@@ -10,7 +10,7 @@ const TopicsQuiz = () => {
 
     return (
         <div>
-            <h2>Quiz Topics Name: {quizss.data.name}</h2>
+            <h2 className='m-3 fw-bold'>Quiz Topics Name: {quizss.data.name}</h2>
             {
                 quizs.map(quiz => <Quiz
                 key={quiz.id}
