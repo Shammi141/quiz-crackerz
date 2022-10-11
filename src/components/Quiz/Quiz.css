@@ -1,0 +1,17 @@
+.quest{
+    
+}
+.options{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.options div{
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(194, 152, 232);
+    border-radius: 8px;
+}
+.options div:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+}

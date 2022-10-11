@@ -5,7 +5,6 @@ import './Home.css'
 
 const Home = () => {
     const topics = useLoaderData();
-    console.log(topics)
 
     return (
         <div className='home-container'>
@@ -14,7 +13,8 @@ const Home = () => {
                     topics.data.map(topic => <Topics
                         key={topic.id}
                         topic={topic}
-                    ></Topics>)
+                    ></Topics>
+                    )
                 }
             </div>
         </div>

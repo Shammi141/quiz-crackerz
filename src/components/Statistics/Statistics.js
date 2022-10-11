@@ -4,7 +4,7 @@ import './Statistics.css'
 const Statistics = () => {
     return (
         <div>
-            <h4>Statistics</h4>
+            <p>qz: </p>
         </div>
     );
 };
