@@ -10,7 +10,6 @@ const Topics = ({topic}) => {
             <div className='topic-info'>
                 <p>{name}</p>
                 <p>Quiz: {total}</p>
-                {/* <button className='btn btn-primary'>Start Practicing</button> */}
                 <p><Link className='link' to={`/topics/${id}`}>Start Quiz</Link></p>
 
             </div>

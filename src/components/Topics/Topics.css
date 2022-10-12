@@ -2,7 +2,7 @@
     border: 1px solid blueviolet;
     border-radius: 10px;
     height: 290px;
-    width: 280px;
+    width: 40%;
     margin: auto;
     margin-top: 50px;
 }
@@ -26,4 +26,12 @@
     border-radius: 8px;
     color: white;
     font-weight: 600;
+}
+
+
+@media screen and (max-width: 450px) {
+    .topic-details{
+        width: 200px;
+    }
+
 }
