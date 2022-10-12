@@ -1,5 +1,6 @@
 import React from 'react';
 import './Quiz.css'
+import { EyeIcon } from '@heroicons/react/24/solid'
 import { ToastContainer, toast } from 'react-toastify';
 
 const Quiz = ({quiz}) => {
@@ -7,10 +8,7 @@ const Quiz = ({quiz}) => {
     const handelOption = (ans) =>{
         const correctAns = correctAnswer;
         const givenAns = ans;
-        console.log(correctAns)
-        console.log(givenAns)
         if(givenAns === correctAns){
-            console.log('yes')
             toast('Correct Answer');
         }
         else{
@@ -19,9 +17,16 @@ const Quiz = ({quiz}) => {
 
     }
 
+    const showAns = () => {
+        const correctAns = correctAnswer;
+        toast(correctAns);
+    }
+
     return (
-        <div className='quest m-5 p-3'>
-            <h6> {question}</h6>
+        <div className='m-5 p-3'>
+            <h6 className='qst'> {question}
+                <EyeIcon onClick={showAns} className="h-6 w-6 eye" />
+            </h6>
 
             <div className='options'>
                 <div onClick={() => handelOption(options[0])}>{options[0]}</div>

@@ -13,6 +13,18 @@
     background-color: blueviolet;
     cursor: pointer;
 }
+.eye{
+    color: rgb(194, 152, 232);
+}
+.eye:hover{
+    color: blueviolet;
+    cursor: pointer;
+}
+.qst{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 
 @media screen and (max-width: 768px) {
