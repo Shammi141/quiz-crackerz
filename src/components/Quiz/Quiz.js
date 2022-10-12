@@ -1,22 +1,21 @@
 import React from 'react';
 import './Quiz.css'
 import { EyeIcon } from '@heroicons/react/24/solid'
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 const Quiz = ({quiz}) => {
     const { question, correctAnswer, options } = quiz;
-    const handelOption = (ans, position) =>{
-        console.log(position)
+    const handelOption = (ans) =>{
         const correctAns = correctAnswer;
         const givenAns = ans;
-        if(givenAns === correctAns && options[position] === givenAns){
+        if(givenAns === correctAns){
 
              toast ('Correct Answer');
-            return;
+          
         }
-        else if (givenAns !== correctAns && options[position] === givenAns){
+        else if (givenAns !== correctAns){
              toast('Wrong Answer');
-            return;
+          
         }
     }
 
@@ -32,12 +31,12 @@ const Quiz = ({quiz}) => {
             </h6>
 
             <div className='options'>
-                <div onClick={() => handelOption(options[0], 0)}>{options[0]}</div>
-                <div onClick={() => handelOption(options[1],1)}>{options[1]}</div>
-                <div onClick={() => handelOption(options[2],2)}>{options[2]}</div>
-                <div onClick={() => handelOption(options[3],3)}>{options[3]}</div>
+                <div onClick={() => handelOption(options[0])}>{options[0]}</div>
+                <div onClick={() => handelOption(options[1])}>{options[1]}</div>
+                <div onClick={() => handelOption(options[2])}>{options[2]}</div>
+                <div onClick={() => handelOption(options[3])}>{options[3]}</div>
             </div>
-            <ToastContainer />
+            
         </div>
     );
 };

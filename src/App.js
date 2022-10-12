@@ -1,4 +1,4 @@
-import { createBrowserRouter, Link, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blogs from './components/Blogs/Blogs';
 import Home from './components/Home/Home';
@@ -52,7 +52,7 @@ function App() {
     {
       path: '*',
       element: <div>Route is not Correct! <br />
-      <Link>Click Here</Link></div>
+        </div>
     }
   ]);
   return (

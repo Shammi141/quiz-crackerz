@@ -1,3 +1,23 @@
+## Quiz Station
+
+## Live website link: 
+https://serene-creponne-2d9cbd.netlify.app/
+
+## About the project: 
+
+This is a project for clearing basic concept of some topics by testing with some questions & answer system. 
+The site is a single page website made by react routing. I have used react, react router, bootstrap, vanilla css, react toast, hero icon to make this project. 
+Characteristics of this project: 
+- There are some quiz topics with an amount of quiz number, answering question's answer user will get result.
+- Blog will increase knowledge.
+- Statistics will show the chart of total questions.
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
