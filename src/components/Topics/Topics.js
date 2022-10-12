@@ -6,6 +6,7 @@ const Topics = ({topic}) => {
     const {id, name, total, logo} = topic;
     return (
         <div className='topic-details'>
+            
             <img src={logo} alt="" />
             <div className='topic-info'>
                 <p>{name}</p>
