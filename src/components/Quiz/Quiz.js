@@ -5,16 +5,19 @@ import { ToastContainer, toast } from 'react-toastify';
 
 const Quiz = ({quiz}) => {
     const { question, correctAnswer, options } = quiz;
-    const handelOption = (ans) =>{
+    const handelOption = (ans, position) =>{
+        console.log(position)
         const correctAns = correctAnswer;
         const givenAns = ans;
-        if(givenAns === correctAns){
-            toast('Correct Answer');
-        }
-        else{
-            toast('Wrong Answer');
-        }
+        if(givenAns === correctAns && options[position] === givenAns){
 
+             toast ('Correct Answer');
+            return;
+        }
+        else if (givenAns !== correctAns && options[position] === givenAns){
+             toast('Wrong Answer');
+            return;
+        }
     }
 
     const showAns = () => {
@@ -29,10 +32,10 @@ const Quiz = ({quiz}) => {
             </h6>
 
             <div className='options'>
-                <div onClick={() => handelOption(options[0])}>{options[0]}</div>
-                <div onClick={() => handelOption(options[1])}>{options[1]}</div>
-                <div onClick={() => handelOption(options[2])}>{options[2]}</div>
-                <div onClick={() => handelOption(options[3])}>{options[3]}</div>
+                <div onClick={() => handelOption(options[0], 0)}>{options[0]}</div>
+                <div onClick={() => handelOption(options[1],1)}>{options[1]}</div>
+                <div onClick={() => handelOption(options[2],2)}>{options[2]}</div>
+                <div onClick={() => handelOption(options[3],3)}>{options[3]}</div>
             </div>
             <ToastContainer />
         </div>
